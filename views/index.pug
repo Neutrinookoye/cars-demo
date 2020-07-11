@@ -1,0 +1,524 @@
+include includes/header.pug 
+block content
+  body
+    include includes/navbar.pug 
+
+    //- Hero section for large and medium screen sizes
+    section(class="hero")
+      div(class='container')
+        h1(class="text-center hero-text ") What would you like to do?
+        div(class="d-none d-sm-none d-md-block d-lg-block d-xl-block")
+          div(class="row main-directive-box-wrap gutter-20")
+            div(class="col-md-4")
+              div(class="main-directive-box")
+                figure.text-center
+                  img(src="./images/buy.svg", alt="Thumb" class="img-fluid hero-img")
+                figcaption.text-center
+                  h4.hero-head  Buy a Car 
+                  p.hero-para
+                    span Buy a verified car at an incredibly affordable price
+                  p
+                    a(href='#' class="btn hero-btn" style="color: #fff")
+                      span Buy Now 
+                  p
+                    a(tabindex="6" class="hero-link" data-toggle="modal" data-target="#buy_howitworks_Modal")
+                      span How it works
+
+            div(id="buy_howitworks_Modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+              div(class="modal-dialog modal-dialog-centered" role="document")
+                div(class="modal-content")
+                  button(type="button" class="close btn-outline-none text-right mr-2" data-dismiss="modal" aria-label="Close")
+                    span(aria-hidden="true" class="hero-text") &times;
+                  div(class="modal-body")
+                    h2.hero-text2 Buying a car is possible in 3 easy steps!
+                    .text-center
+                      h3.hero-head Step1
+                      p.hero-para Visit any CarsBazr lot closest to you to choose from an extensive variety of pre-inspected and affordable used cars.
+                      h3.hero-head Step2
+                      p.hero-para Read the detailed inspection report of the car’s condition, which helps you make a buying decision. You can also come with your mechanic to check the car’s condition before purchase.
+                      h3.hero-head Step 3
+                      p.hero-para Make payment for the car through bank transfer or a bank deposit into the company’s account. Sign the required documents and drive your new car into the sunset.
+                      a(href="#" class=" btn hero-btn mb-5") Get started
+              
+            div(class="col-md-4")
+              div(class="main-directive-box")
+                figure.text-center
+                  img(src="./images/sell.svg", alt="Thumb" class="img-fluid hero-img")
+                figcaption.text-center
+                  h4.hero-head Sell Your Car 
+                  p.hero-para
+                    span Value your car and book an inspection in less than 5 minutes
+                  p 
+                    a(href='#' class="btn hero-btn" style="color: #fff")
+                      span Sell now
+                  p 
+                    a(tabindex="6" class="hero-link" data-toggle="modal" data-target="#sell_howitworks_Modal")
+                      span How it works
+
+            div(id="sell_howitworks_Modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+              div(class="modal-dialog modal-dialog-centered" role="document")
+                div(class="modal-content")
+                  button(type="button" class="close btn-outline-none text-right mr-2" data-dismiss="modal" aria-label="Close")
+                    span(aria-hidden="true" class="hero-text") &times;
+                  div(class="modal-body")
+                    h2.hero-text2 We buy your car and pay you instantly
+                    p.text-center.hero-para2 You just need to follow these simple steps
+                    .text-center
+                      h3.hero-head Step1 - 
+                        span.hero-para3 Value your car
+                      p.hero-para Our car valuation tool is free, easy to use, and gives you an instant quote. Our price guarantee ensures that you get the price we quote online which is usually “same range” with the current market value of your car (if in top condition). The valuation is valid for 7 days only.
+                      h3.hero-head Step2 - 
+                        span.hero-para3 Schedule an inspection
+                      p.hero-para Once you’ve booked an appointment using the free evaluation form, booked, our agents will give you a call to confirm and direct you to our centre closest to you. Our inspection centers are open Mondays to Fridays from 8 am to 5 pm and on Saturdays from 10 am to 5 pm. During the Inspection, our trained Auto experts check the status of your vehicle. This ranges from Electricals, Suspension, Previous Body Works, Tires, Engine Status, Air Conditioner, Gear, Interior etc.
+                      h3.hero-head Step 3 - 
+                        span.hero-para3 Get paid!
+                      p.hero-para Once inspection is completed and a price is agreed to, we pay in as little as 45 minutes directly to your bank account. Our model is fast and free of delays.
+                      a(href="#" class=" btn hero-btn mb-5") Get started
+                      
+            div(class="col-md-4")
+              div(class="main-directive-box")
+                figure.text-center
+                  img(src="./images/swap.svg", alt="Thumb" class="img-fluid hero-img")
+                figcaption.text-center
+                  h4.hero-head Swap Cars
+                  p.hero-para
+                    span Seamlessly trade in your old car for another one
+                  p 
+                    a(href='#' class="btn hero-btn" style="color: #fff")
+                      span Swap now
+                  p 
+                    a(tabindex="6" class="hero-link" data-toggle="modal" data-target="#swap_howitworks_Modal")
+                      span How it works
+
+            div(id="swap_howitworks_Modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+              div(class="modal-dialog modal-dialog-centered" role="document")
+                div(class="modal-content")
+                  button(type="button" class="close btn-outline-none text-right mr-2" data-dismiss="modal" aria-label="Close")
+                    span(aria-hidden="true" class="hero-text") &times;
+                  div(class="modal-body")
+                    h2.hero-text2 Trade in your old car for a new one in 4 easy steps!
+                    p.text-center.hero-para2 Visit www.cars45.com and book an appointment to swap your car. You can also walk-in to any of the “Car Swap Active” lots.
+                    .text-center
+                      h3.hero-head Step1
+                      p.hero-para Drive into any of the selected Car Lots and walk to the Swap Service corner.
+                      h3.hero-head Step2
+                      p.hero-para Choose the car you want to buy and agree on the price.
+                      h3.hero-head Step 3
+                      p.hero-para Get your Car inspected and auctioned.
+                      h3.hero-head Step 4
+                      p.hero-para If you agree to the auction offer, pick up the new car you traded your old one for and pay the difference or CarsBazr will pay you the difference depending on which of the cars is more expensive.
+                      a(href="#" class=" btn hero-btn mb-5") Get started
+
+        //- Hero section for smaller devices
+        div(class="d-block d-sm-block d-md-none d-lg-none d-xl-none")
+          div(class="home-featured-tab-wrap")
+            ul(class="nav nav-tabs nav-fill justify-content-center" id='myTab' role="tablist")
+              li(class="nav-item")
+                a(class="nav-link active cc" id="home-featured-two-tab" data-toggle="tab" href="#home-featured-two" role="tab" aria-controls='home-featured-two' aria-selcted="true")
+                  span Buy
+              li(class="nav-item")
+                a(class="nav-link cc" id="home-featured-one-tab" data-toggle="tab" href="#home-featured-one" role="tab" aria-controls='home-featured-one' aria-selcted="false")
+                  span Sell
+              li(class="nav-item")
+                a(class="nav-link cc" id="home-featured-three-tab" data-toggle="tab" href="#home-featured-three" role="tab" aria-controls='home-featured-three' aria-selcted="false")
+                  span Swap
+          div(class="tab-content text-center" id="myTabContent")
+            div(class="tab-pane fade" id="home-featured-one" role="tabpanel" aria-labelledby="home-featured-one-tab")
+              div(class="main-directive-box")
+                figure
+                  img(src="./images/sell.svg", alt="Thumb" class="img-fluid hero-img")
+                figcaption
+                  h4.hero-head Sell a Car 
+                  p.hero-para4 
+                    span Value your car and book an inspection in less than 5 minutes
+                  p 
+                    a(href='#' class="btn hero-btn" style="color: #fff")
+                      span Sell now
+                  p 
+                    a(tabindex="6" class="hero-link" data-toggle="modal" data-target="#sell_howitworks_Modal")
+                      span How it works
+            div(class="tab-pane fade show active" id="home-featured-two" role="tabpanel" aria-labelledby="home-featured-two-tab") 
+              div(class="main-directive-box")
+                figure
+                  img(src="./images/buy.svg", alt="Thumb" class="img-fluid dummy-img")
+                figcaption
+                  h4.hero-head Buy a Car 
+                  p.hero-para4
+                    span Buy a verified car at an incredibly affordable price
+                  p 
+                    a(href='#' class="btn hero-btn" style="color: #fff")
+                      span Buy Now 
+                  p 
+                    a(tabindex="6" class="hero-link" data-toggle="modal" data-target="#buy_howitworks_Modal")
+                      span How it works
+            div(class="tab-pane fade" id="home-featured-three" role="tabpanel" aria-labelledby="home-featured-three-tab")
+              div(class="main-directive-box")
+                figure
+                  img(src="./images/swap.svg", alt="Thumb" class="img-fluid dummy-img")
+                figcaption
+                  h4.hero-head Swap a Car 
+                  p.hero-para4
+                    span Seamlessly trade in your old car for another one
+                  p 
+                    a(href='#' class="btn hero-btn" style="color: #fff")
+                      span Swap now
+                  p 
+                    a(tabindex="6" class="hero-link" data-toggle="modal" data-target="#swap_howitworks_Modal")
+                      span How it works
+    //- End of section
+
+
+
+    //- Preorder section
+    section(class="preorder")
+      div(class="container")
+        div(class="row")
+          div(class="col-md-6")
+            div(class="text-center" style="margin-bottom : 20px")
+              h3 Preorder Cars Available In Nigeria
+              h4 Do you prefer Nigerian used or New cars
+              a(style="width:250px" class="btn hero-btn" href="#")
+                span Call 08137803152
+          div(class="col-md-6")
+            div(class="text-center row" style="margin-bottom : 20px")
+              div(class="col-lg-12")
+                h3 Import Cars From Abroad
+                h4 Do you prefer Foreign used or New cars
+                div(class="col-lg-12")
+                  a(style="width:250px" class="btn hero-btn" href="#")
+                    span ORDER NOW
+    //- End of section
+
+
+
+    //- Products section
+    section(class="" id="products")
+      .container
+        .row
+          .col-md-3.col-sm-6.pr-2.pl-2 
+            div.product 
+              div.text-right
+                h3 B
+              div
+                h6 Audi A6 2014
+                h5 &#8358; 8,060,000
+                p.text-muted Mileage: 
+                  span 20480
+                p.text-muted Year: 
+                  span 2014
+                p.text-muted Car ID: 
+                  span NG-511937
+
+          .col-md-3.col-sm-6.pr-2.pl-2 
+            div.product 
+              div.text-right
+                h3 B
+              div
+                h6 Lexus Gx 2013
+                h5 &#8358; 10,935,000
+                p.text-muted Mileage: 
+                  span 98917
+                p.text-muted Year: 
+                  span 2013
+                p.text-muted Car ID: 
+                  span NG-508311
+
+          .col-md-3.col-sm-6.pr-2.pl-2 
+            div.product 
+              div.text-right
+                h3 B
+              div
+                h6 Lexus Gx 460 2014
+                h5 &#8358; 16,685,000
+                p.text-muted Mileage: 
+                  span 82767
+                p.text-muted Year: 
+                  span 2014
+                p.text-muted Car ID: 
+                  span NG-506391
+
+          .col-md-3.col-sm-6.pr-2.pl-2 
+            div.product 
+              div.text-right
+                h3 B
+              div
+                h6 Ford Fusion 2010
+                h5 &#8358; 2,195,000
+                p.text-muted Mileage: 
+                  span 165108
+                p.text-muted Year: 
+                  span 2010
+                p.text-muted Car ID: 
+                  span NG-506282
+
+          .col-md-3.col-sm-6.pr-2.pl-2 
+            div.product 
+              div.text-right
+                h3 B
+              div
+                h6 Honda Accord 2016
+                h5 &#8358; 6,170,000
+                p.text-muted Mileage: 
+                  span 44611
+                p.text-muted Year: 
+                  span 2016
+                p.text-muted Car ID: 
+                  span NG-505289
+
+          .col-md-3.col-sm-6.pr-2.pl-2 
+            div.product 
+              div.text-right
+                h3 B
+              div
+                h6 Honda Ridgeline 2014
+                h5 &#8358; 6,500,000
+                p.text-muted Mileage: 
+                  span 86953
+                p.text-muted Year: 
+                  span 2014
+                p.text-muted Car ID: 
+                  span NG-505288
+
+          .col-md-3.col-sm-6.pr-2.pl-2 
+            div.product 
+              div.text-right
+                h3 B
+              div
+                h6 Kia Rio 2013
+                h5 &#8358; 2,310,000
+                p.text-muted Mileage: 
+                  span 10370
+                p.text-muted Year: 
+                  span 2013
+                p.text-muted Car ID: 
+                  span NG-503772
+
+          .col-md-3.col-sm-6.pr-2.pl-2 
+            div.product 
+              div.text-right
+                h3 B
+              div
+                h6 Toyota Camry 2015
+                h5 &#8358; 7,485,000
+                p.text-muted Mileage: 
+                  span 88439
+                p.text-muted Year: 
+                  span 2015
+                p.text-muted Car ID: 
+                  span NG-501271
+
+          .col-md-12
+            .text-center
+              a(href="#" class="btn hero-btn mt-4") See more offers
+    //- End of section
+
+    //- Free valuation section
+    section(class="" id="valuation")
+      .container
+        .row
+          .col-lg-3.col-md-12
+            .value-para
+              p Want to know what your car is worth?
+          .col-lg-6.col-md-12
+            .value-header
+              h3 Get a FREE Valuation Now
+          .col-lg-3.col-md-12
+            .value-link
+              a(href="#" class="btn value-btn") Get it!
+    //- End of section
+
+
+    //- Why choose us section
+    section(class="" id="why")
+      .container
+        .row
+          .col-md-12
+            .text-center
+              h3 Why choose Cars45?
+          .col-md-5.why-box
+            div.navbar.navbar-expand
+              ul.navbar-nav.why-box2
+                li.nav-item
+                  figure
+                    i(class="fa fa-tachometer-alt fa-3x")
+                  figcaption
+                    h4 Fast
+
+                li.nav-item
+                  figure
+                    i(class="fa fa-shield-alt fa-3x")
+                  figcaption
+                    h4 Safe
+
+                li.nav-item
+                  figure
+                    i(class="fa fa-feather fa-3x  ")
+                  figcaption
+                    h4 Easy
+            div.mt-3
+              p 
+                i(class="fa fa-check") 
+                  span  Sell cars in any condition
+              p 
+                i(class="fa fa-check") 
+                  span  Buy certified affordable cars
+              p 
+                i(class="fa fa-check") 
+                  span  Buy, sell or swap cars fast
+              p 
+                i(class="fa fa-check") 
+                  span  Get paid fast when you sell
+              p 
+                i(class="fa fa-check") 
+                  span  We keep your information safe
+
+          .col-md-7
+            div 
+              figure(class="m-0 cursor_pointer bg-dark" data-toggle="modal" data-target="#youtube-video-modal")
+                span(class="img-fluid b" style="display:inline-block;height:0;width:0") 
+
+        div(id="youtube-video-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+          div(class="modal-dialog modal-dialog-centered" role="document")
+            div(class="modal-content")
+              button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+                span(aria-hidden="true")
+                  i(class="fa fa-times-circle")
+              div(class="modal-body")
+                iframe(src="https://www.youtube.com/embed/IDExqfa_L9Q", allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen=" " frameborder="0" width="560" height="315")
+    //- End of section
+
+
+
+    //- Testimonial section
+    section(class="" id="testimonial")
+      .container
+        .row  
+          .col-md-12
+            div.text-center.mb-5
+              h3 They trust us; you can too
+          .owl-carousel.owl-theme.owl-client
+            .col-md-12.col-sm-12
+              .testimonial-thumb
+                div.testimonial
+                  p "I saw Cars45 on an advert. I needed some money urgently so I decided to sell my car with them. I got my money in less than an hour. I really got value. They have a really nice customer service. I recommend them."
+                  div
+                    div
+                      span
+                        img(src="/images/ali.jpg", alt="" class="testimonial-img")
+                    div.testimonial-author
+                      h4 James
+                      p Lagos
+
+            .col-md-12.col-sm-12
+              .testimonial-thumb
+                div.testimonial
+                  p "Great service, quick and good value for the ride and also a quick payment. I really love their seriousness. Awesome customer service."
+                  div
+                    img(src="/images/ali.jpg", alt="" class="testimonial-img")
+                    div.testimonial-author
+                      h4 Kalu
+                      p Lagos
+            
+            .col-md-12.col-sm-12
+              .testimonial-thumb
+                div.testimonial
+                  p "Cars45 buys your car instantly, you don't need to wait another day to get money for your new ride."
+                  div
+                    img(src="/images/ali.jpg", alt="" class="testimonial-img")
+                    div.testimonial-author
+                      h4 Ahmed
+                      p Lagos
+    //- End of section
+
+
+
+    //- Contact section
+    section(class="" id="contact")
+      .container
+        .row
+          .col-md-3.order-first
+            div.contact-head
+              img(src="/images/cars-45-logo-3.svg", alt="" class="header-logo")
+            div.contact-link1.mt-4
+              .bs
+                a(href="#" ) Buy
+                a(href="#" ) Sell
+                a(href="#" ) Swap
+              .cd
+                p.mt-4.ass
+                  i(class="fa fa-phone") 
+                    span +234 818 984 0160
+                p 
+                  i(class="fa fa-phone") 
+                    span +234 813 984 0160
+          .col-md-3
+            div.contact-link2.cs
+              ul
+                li
+                  a(href="#" class="") About Us
+                li
+                  a(href="#"  class="") Contact Us
+                li
+                  a(href="#"  class="") Our Services
+                li
+                  a(href="#"  class="") Careers
+                li
+                  a(href="#"  class="") Blog
+          .col-md-3.order-last.order-md-first
+            div.contact-link2
+              ul
+                li
+                  a(href="#" class="") Inspection Centers
+                li
+                  a(href="#" class="") Auction Locations
+                li
+                  a(href="#" class="") Required Documents
+                li 
+                  a(href="#" class="") Common Questions
+                li 
+                  a(href="#" class="") Background Check
+          .col-md-3.order-first.order-md-last
+            div.contact-link3
+              ul
+                li
+                  a(href="#")
+                    i(class="fab fa-facebook-square") 
+                    span Facebook
+                li
+                  a(href="#")
+                    i(class="fab fa-instagram") 
+                    span Instagram
+                li
+                  a(href="#")
+                    i(class="fab fa-twitter") 
+                    span Twitter
+    //- End of section
+
+
+
+    section(class="footer" id="")
+      .container
+        .row
+          .col-md-6
+            div.footer-link
+              a(href="#" class="text-white mr-3") Terms &amp; Conditions
+              a(href="#" class="text-white") Privacy Policy
+          .col-md-6
+            div.copy
+              p.text-white &copy; 2020 Cars45.com. All rights reserved
+    //- End of section
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  include includes/footer.pug 
